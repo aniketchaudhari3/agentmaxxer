@@ -1,0 +1,27 @@
+{
+  "name": "agentmaxxer",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "test": "turbo test",
+    "typecheck": "turbo typecheck",
+    "clean": "turbo clean",
+    "amx": "node apps/cli/dist/index.js"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "turbo": "^2.5.0",
+    "typescript": "^5.8.3"
+  },
+  "packageManager": "npm@11.6.2",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,33 @@
+{
+  "name": "@agentmaxxer/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@agentmaxxer/config": "*",
+    "@agentmaxxer/core": "*",
+    "@agentmaxxer/schemas": "*",
+    "@agentmaxxer/providers": "*",
+    "@agentmaxxer/registry": "*",
+    "@agentmaxxer/router": "*",
+    "@agentmaxxer/tracking": "*",
+    "@agentmaxxer/types": "*",
+    "fastify": "^5.3.2",
+    "@fastify/cors": "^11.0.1",
+    "ws": "^8.18.2"
+  },
+  "devDependencies": {
+    "@types/ws": "^8.18.0"
+  }
+}

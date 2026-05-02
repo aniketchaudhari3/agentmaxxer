@@ -1,0 +1,31 @@
+{
+  "name": "@agentmaxxer/cli",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "amx": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@agentmaxxer/api": "*",
+    "@agentmaxxer/config": "*",
+    "@agentmaxxer/providers": "*",
+    "@agentmaxxer/registry": "*",
+    "@agentmaxxer/router": "*",
+    "@agentmaxxer/tracking": "*",
+    "@agentmaxxer/types": "*",
+    "commander": "^13.1.0"
+  }
+}
